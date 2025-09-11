@@ -1,5 +1,5 @@
-# ATIV-04-ET-01
-# Cada item da atividade foi separada em uma pasta criada com o mesmo nome da atividade.
+# ATIV-04-ET-01 - Analisando a classe football.
+# Cada item da atividade foi respondida em uma pasta criada com o mesmo nome da atividade.
 
 ## Integridade dos Arquivos
 ■ Verifique se todas as imagens listadas no arquivo de informações realmente existem no diretório de imagens e vice-versa.<br>
