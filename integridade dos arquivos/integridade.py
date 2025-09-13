@@ -30,17 +30,42 @@ for rel_path in csv_files:
 
 # Verifica se há arquivos no diretório que não estão no CSV
 dir_files = os.listdir(image_root)
-extra_files = []
-for file in dir_files:
-    full_path = os.path.join('train/football', file)
-    if full_path not in csv_files:
-        extra_files.append(file)
+csv_filenames = [os.path.basename(path) for path in csv_files]
+extra_files = [file for file in dir_files if file not in csv_filenames]
+
 
 # Resultados
 print(f"🔍 Total de imagens listadas no CSV: {len(csv_files)}")
 print(f"❌ Imagens listadas no CSV que não existem: {len(missing_files)}")
 print(f"📁 Imagens no diretório que não estão no CSV: {len(extra_files)}")
 print(f"🖼️ Imagens com formato diferente de {expected_format}: {len(wrong_format)}")
+
+"""
+🔄 Em resumo:
+O código está fazendo uma verificação cruzada:
+
+O que o CSV diz que deveria existir ✅
+
+O que realmente existe na pasta ✅
+
+Assim, você garante que o conjunto de dados está completo, organizado e sem erros
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 """
 # Exibir detalhes se quiser
